@@ -5,3 +5,6 @@ all:
 
 clean:
 		make -C /lib/modules/$(shell uname -r)/build M=$(PWD) clean
+
+install:
+		cp -v mac80211_hwsim.ko /lib/modules/$(shell uname -r)/extramodules/
