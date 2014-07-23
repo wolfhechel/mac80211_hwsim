@@ -8,3 +8,4 @@ clean:
 
 install:
 		cp -v mac80211_hwsim.ko /lib/modules/$(shell uname -r)/extramodules/
+		depmod
